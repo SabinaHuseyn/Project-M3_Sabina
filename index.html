@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id='toDoFrame'>
+            <div class='topOfFrame'></div>
+            <div id="inTodoFrame">
+                <h1>To-Do List</h1>
+                <div class='sortIcon'><img class='sort' src="./images/notselected-0.svg" alt="sort icon" /></div>
+                <div class='container-div'>
+
+                    <div class="row-div">
+                        <div class='dots'><img src="./images/dotsToDragDrop.png" alt="four dots" />
+                        </div>
+
+                        <input type="text" class="listInput" maxlength="27" />
+
+                        <div class='delete'><img src="./images/notDelete.png" alt="delete icon" />
+                        </div>
+                    </div>
+                </div>
+                <div class='addList'>
+                    <span class='plus'>+</span>
+                    <button class='buttonAdd'>Add to List</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
