@@ -74,10 +74,11 @@ function deleteTask() {
   let deleteBtn = document.querySelectorAll(".delete img");
 
   deleteBtn.forEach((element) => {
-    element.addEventListener("click", () => {
-      element.parentNode.parentNode.remove();
-    });
+    element.addEventListener("click", handleDelete)
   });
+}
+function handleDelete(event) {
+  event.target.parentNode.parentNode.remove();
 }
 
 // function sorts values of inputs
@@ -90,7 +91,7 @@ function handleSort() {
   console.log(rowsValueArray);
 
   rowsValueArray.sort();
-  // check helps to count clicks on sort button, which with every click changes sort image (up or down)
+  // check helps to count clicks on sort button, which with every click changes sort and sort image (up or down)
   if (check % 2 != 0) {
     rowsValueArray.reverse();
   }
